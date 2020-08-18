@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBzBUHGIJ-gknOBmVBm-4iJmMDB2r7sIoA",
+            authDomain: "todo-application-7ebe3.firebaseapp.com",
+            databaseURL: "https://todo-application-7ebe3.firebaseio.com",
+            projectId: "todo-application-7ebe3",
+            storageBucket: "todo-application-7ebe3.appspot.com",
+            messagingSenderId: "1030195612452",
+            appId: "1:1030195612452:web:a51c12fa2338f2065181b1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <title>ToDo Application</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="header">
+            <!-- <img src="https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&w=1000&q=80" alt=""> -->
+            <h1>Todo Application</h1>
+        </div>
+        <div class="body">
+            <input id="input" type="text" placeholder="Enter your ToDo" maxlength="70" required="required">
+            <Button onclick="addValue()">Add ToDo</Button>
+            <Button onclick="dltAll()">Delete All</Button>
+        </div>
+        <div class="list">
+            <ul id="list">
+                <!-- <li>Faizan</li> -->
+            </ul>
+        </div>
+        <!-- <div class="footer"></div> -->
+    </div>
+</body>
+<script src="appHome.js"></script>
+
+</html>

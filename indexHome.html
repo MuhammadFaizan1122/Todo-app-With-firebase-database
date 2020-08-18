@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHome.css">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBzBUHGIJ-gknOBmVBm-4iJmMDB2r7sIoA",
+            authDomain: "todo-application-7ebe3.firebaseapp.com",
+            databaseURL: "https://todo-application-7ebe3.firebaseio.com",
+            projectId: "todo-application-7ebe3",
+            storageBucket: "todo-application-7ebe3.appspot.com",
+            messagingSenderId: "1030195612452",
+            appId: "1:1030195612452:web:a51c12fa2338f2065181b1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <title>Todo Application</title>
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="content">
+            <h1>Todo Application</h1>
+            <input id="name" type="text" placeholder="Enter Your Name" required="required"><br><br><br>
+            <!-- <button onclick="printWelcome()" href="file:///C:/Users/Faizan/Desktop/todo%20application/index.html">Let's start</button> -->
+            <a onclick="printWelcome()" href="file:///C:/Users/Faizan/Desktop/todo%20application/index.html">Let's start</a>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="appHome.js"></script>
+
+</html>
